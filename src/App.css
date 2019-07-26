@@ -1,6 +1,7 @@
 body {
   background-color: grey;
   height: 100vh;
+  font-family: "Artifika";
   width: 100%;
   display: flex;
   justify-content: center;
@@ -60,4 +61,9 @@ a {
   justify-content: space-between;
   width: 80%;
   height: 10vh;
+}
+.employees-info img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
