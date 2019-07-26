@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import MainHeader from "./Component/MainHeader";
 import SubHeader from "./Component/SubHeader";
-import Employees from "./Component/Employees";
+import Employees from "./Component/EmployeesSection";
 
 const App = () => {
   
