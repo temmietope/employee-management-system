@@ -15,6 +15,10 @@ const EmployeesSection = () => {
     fetchUsers().then(res => setEmployee(res));
   }, []);
 
+  const deleteEntry = login => {
+    const newEmployees = employees.filter(employee => employee.login !== login);
+    setEmployee(newEmployees);
+  };
   const renderEmployeeSection = () => {
     return (
       <div>
@@ -23,7 +27,7 @@ const EmployeesSection = () => {
           <SideBar />
         </section>
         <section>
-          <EmployeesInfo employees={employees} />
+          <EmployeesInfo employees={employees} deleteEntry={deleteEntry} />
         </section>
       </div>
     );
