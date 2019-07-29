@@ -47,23 +47,31 @@ a {
 .icons span {
   padding-left: 10px;
 }
-.content{
+.content {
   /* padding: 0 30px; */
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  width: 80vw
+  width: 80vw;
 }
-.sub-header{
+.sub-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
   height: 10vh;
 }
-.employees-info img{
+.employees-info img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
+/* .modal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+} */
