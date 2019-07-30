@@ -1,26 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const ModalForm = ({ details, onRequestClose }) => {
-  const [employee, setEmployee] = useState({
-    name: `${details.name}`,
-    jobtitle: `${details.jobtitle}`,
-    salary: `${details.salary}`,
-    status: `${details.status}`,
-    time: `${details.time}`,
-    duration: `${details.duration}`
-  });
-  useEffect(() => {
-    console.log(details);
-  });
+const ModalForm = ({ details, onRequestClose, changeDetails }) => {
+  const [employeeDetails, setemployeeDetails] = useState({ ...details });
   const save = () => {
-    console.log(employee);
-    setEmployee(employee);
+    setemployeeDetails(employeeDetails);
+    changeDetails(employeeDetails, employeeDetails.id);
   };
-  const updateInfo = e => {
-    setEmployee({ ...employee, [e.target.name]: e.target.value });
+  const updateDetails = e => {
+    setemployeeDetails({ ...employeeDetails, [e.target.name]: e.target.value });
   };
   const customStyles = {
     content: {
@@ -34,7 +24,7 @@ const ModalForm = ({ details, onRequestClose }) => {
   };
   return (
     <div style={customStyles}>
-      <h2>Edit Employee Info</h2>
+      <h2>Edit {details.name} Details</h2>
       <button onClick={onRequestClose}>Close</button>
       <button
         onClick={() => {
@@ -45,24 +35,13 @@ const ModalForm = ({ details, onRequestClose }) => {
       </button>
       <form>
         <div>
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={details.name}
-            onChange={e => {
-              updateInfo(e);
-            }}
-          />
-        </div>
-        <div>
           <label>JobTitle</label>
           <input
             type="text"
             name="jobtitle"
-            value={details.jobtitle}
+            placeholder={details.jobtitle}
             onChange={e => {
-              updateInfo(e);
+              updateDetails(e);
             }}
           />
         </div>
@@ -71,9 +50,9 @@ const ModalForm = ({ details, onRequestClose }) => {
           <input
             type="text"
             name="salary"
-            value={details.salary}
+            placeholder={details.salary}
             onChange={e => {
-              updateInfo(e);
+              updateDetails(e);
             }}
           />{" "}
           GBP
@@ -83,9 +62,9 @@ const ModalForm = ({ details, onRequestClose }) => {
           <input
             type="text"
             name="time"
-            value={details.time}
+            placeholder={details.time}
             onChange={e => {
-              updateInfo(e);
+              updateDetails(e);
             }}
           />
         </div>
@@ -94,9 +73,9 @@ const ModalForm = ({ details, onRequestClose }) => {
           <input
             type="text"
             name="status"
-            value={details.status}
+            placeholder={details.status}
             onChange={e => {
-              updateInfo(e);
+              updateDetails(e);
             }}
           />
         </div>
@@ -105,9 +84,9 @@ const ModalForm = ({ details, onRequestClose }) => {
           <input
             type="text"
             name="duration"
-            value={details.duration}
+            placeholder={details.duration}
             onChange={e => {
-              updateInfo(e);
+              updateDetails(e);
             }}
           />
         </div>
