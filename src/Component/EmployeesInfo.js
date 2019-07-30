@@ -7,7 +7,7 @@ Modal.setAppElement("#root");
 
 const EmployeesInfo = ({ employees, deleteEntry }) => {
   //states
-  let [allEmployeesPortfolio, setAllemployeesPortfolio] = useState([]);
+  let allEmployeesPortfolio = [];
   const [portfolio, setPorfolio] = useState({});
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -18,6 +18,30 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
 
   const closeModal = () => {
     setModalIsOpen(false);
+  };
+
+  const changeDetails = (employee, id) => {
+    const newEmployeePortfolio = [...allEmployeesPortfolio];
+    newEmployeePortfolio.map(e => {
+      if (e.id === id) {
+        if (e.jobtitle !== employee.jobtitle) {
+          jobtitle[id] = employee.jobtitle;
+        }
+        if (e.salary !== employee.salary) {
+          salary[id] = employee.salary;
+        }
+        if (e.status !== employee.salary) {
+          status[id] = employee.salary;
+        }
+        if (e.time !== employee.time) {
+          time[id] = employee.time;
+        }
+        if (e.duration !== employee.duration) {
+          duration[id] = employee.duration;
+        }
+      }
+      return newEmployeePortfolio;
+    });
   };
 
   //renderFunction
@@ -35,7 +59,8 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
         </div>
         {employees.map((employee, index) => {
           const employeePortfolio = {
-            name:employee.login,
+            id: index,
+            name: employee.login,
             jobtitle: jobtitle[index],
             salary: salary[index],
             time: time[index],
@@ -84,9 +109,11 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
           isOpen={modalIsOpen}
           contentLabel="Example Modal"
         >
-          
-          <ModalForm details={portfolio} 
-          onRequestClose={closeModal}/>
+          <ModalForm
+            details={portfolio}
+            onRequestClose={closeModal}
+            changeDetails={changeDetails}
+          />
         </Modal>
       </div>
     );
