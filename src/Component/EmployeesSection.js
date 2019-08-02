@@ -21,7 +21,7 @@ const EmployeesSection = () => {
   };
   const renderEmployeeSection = () => {
     return (
-      <div>
+      <div className="employees-section">
         {console.log(employees)}
         <section>
           <SideBar />
