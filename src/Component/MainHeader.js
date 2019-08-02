@@ -17,6 +17,9 @@ const MainHeader = () => {
             <a href="/">Employee</a>
           </span>
           <span>
+            <a href="/">Client</a>
+          </span>
+          <span>
             <a href="/">Equipment</a>
           </span>
         </section>
