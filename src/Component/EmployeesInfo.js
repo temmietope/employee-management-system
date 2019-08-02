@@ -43,19 +43,32 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
       return newEmployeePortfolio;
     });
   };
+  const checkAllBoxes=()=>{
 
-  //renderFunction
+  }
+
   const renderEmployeesInfo = () => {
     return (
       <div className="employees-info">
-        <div className="employee">
-          <input type="checkbox" className="checkbox" />
-          <span className="employee-name">{`EMPLOYEE ${
-            employees.length
-          }`}</span>
-          <span>SALARY</span>
-          <span>STATUS</span>
-          <span>MANAGE</span>
+        <div className="employee employee-header">
+          <section className="checkbox">
+            <input type="checkbox" onChange={()=>{
+              checkAllBoxes()
+            }} />
+          </section>
+          <section className="avatar" />
+          <section className="employee-name">
+            <h4>{`EMPLOYEE ${employees.length}`}</h4>
+          </section>
+          <section className="employee-salary">
+            <h4>SALARY</h4>
+          </section>
+          <section className="employee-status">
+            <h4>STATUS</h4>
+          </section>
+          <section className="manage">
+            <h4>MANAGE</h4>
+          </section>
         </div>
         {employees.map((employee, index) => {
           const employeePortfolio = {
@@ -68,20 +81,33 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
             duration: duration[index]
           };
           allEmployeesPortfolio = [...allEmployeesPortfolio, employeePortfolio];
+
           return (
-            <div key={index} className="employee">
-              <input type="checkbox" name="employee" className="checkbox" />
-              <span className="employee-name">
+            <div key={index} className="employee employee-body">
+              <section className="checkbox">
+                <input type="checkbox" name="employee" />
+              </section>
+              <section className="avatar">
                 <img src={employee.avatar_url} alt="avatar" />
-                {`${employee.login}
-              ${employeePortfolio.jobtitle}`}
-              </span>
-              <span>{`${employeePortfolio.salary} GBP
-              ${employeePortfolio.time}
-              `}</span>
-              <span>{`${employeePortfolio.status}
-              ${employeePortfolio.duration}`}</span>
-              <span>
+              </section>
+              <section className="employee-name">
+                <span>
+                  <span> {employee.login}</span>
+                  <br />
+                  <span>{employeePortfolio.jobtitle}</span>
+                </span>
+              </section>
+              <section className="employee-salary">
+                <span>{employeePortfolio.salary} GBP</span>
+                <br />
+                <span>{employeePortfolio.time}</span>
+              </section>
+              <section className="employee-status">
+                <span>{employeePortfolio.status}</span>
+                <br />
+                <span>{employeePortfolio.duration}</span>
+              </section>
+              <section className="manage">
                 <button>
                   <i
                     className="fas fa-pencil-alt"
@@ -100,7 +126,7 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
                     }}
                   />
                 </button>
-              </span>
+              </section>
             </div>
           );
         })}
