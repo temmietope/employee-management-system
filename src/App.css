@@ -1,6 +1,5 @@
 body {
   background-color: grey;
-  height: 100vh;
   font-family: "Artifika";
   width: 100%;
   display: flex;
@@ -13,7 +12,7 @@ a {
 }
 .app {
   background-color: rgb(155, 154, 154);
-  height: 80vh;
+  /* height: 80vh; */
   width: 80vw;
 }
 .main-header {
@@ -48,7 +47,6 @@ a {
   padding-left: 10px;
 }
 .content {
-  /* padding: 0 30px; */
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -62,16 +60,56 @@ a {
   width: 80%;
   height: 10vh;
 }
-.employees-info img {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+
+.employees-section {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 35% 65%;
+  padding: 0;
 }
-/* .modal {
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-} */
+.side-bar ul {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 10px;
+}
+.side-bar li {
+  padding: 20px;
+  margin: 5px;
+  font-size: 1em;
+  list-style: none;
+  border: 1px solid black;
+}
+.employees-info {
+  margin-left: 10px;
+}
+.employee {
+  display: grid;
+  grid-template-columns: 6% 8% 28% 17% 17% 24%;
+  border-radius: 4px;
+  font-size: 0.7em;
+  padding-right: 0;
+}
+.employees-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.employee button{
+  background-color: inherit;
+  border: none;
+  padding: 0 10px;
+  margin-right: 0;
+}
+.employee i{
+  font-size: 20px;
+}
+.employee-body {
+  padding: 20px 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.842);
+  margin-bottom: 10px;
+}
+.employee-name {
+  text-transform: capitalize;
+}
