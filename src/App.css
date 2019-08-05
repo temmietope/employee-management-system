@@ -41,7 +41,6 @@ a {
 .icons {
   display: flex;
   justify-content: flex-end;
-  /* margin:  */
 }
 .icons span {
   padding-left: 10px;
@@ -60,6 +59,16 @@ a {
   width: 80%;
   height: 10vh;
 }
+.sub-header span {
+  font-size: 30px;
+}
+.sub-header button {
+  border: none;
+  background-color: rgb(19, 122, 19);
+  height: 35px;
+  width: 120px;
+  border-radius: 30%;
+}
 
 .employees-section {
   display: grid;
@@ -67,17 +76,27 @@ a {
   grid-template-columns: 35% 65%;
   padding: 0;
 }
+.side-bar {
+  background-color: rgba(255, 255, 255, 0.842);
+  padding: 40px 20px;
+}
 .side-bar ul {
   margin-left: 0;
   padding-left: 0;
   margin-right: 10px;
 }
 .side-bar li {
-  padding: 20px;
-  margin: 5px;
+  padding: 20px 0 20px 10px;
   font-size: 1em;
   list-style: none;
-  border: 1px solid black;
+  border-radius: 6px;
+}
+.side-bar li:hover {
+  background-color: rgba(231, 199, 199, 0.856);
+}
+.side-bar i {
+  margin-right: 15px;
+  font-size: 1.2em;
 }
 .employees-info {
   margin-left: 10px;
@@ -89,19 +108,20 @@ a {
   font-size: 0.7em;
   padding-right: 0;
 }
+
 .employees-info img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
-.employee button{
+.employee button {
   background-color: inherit;
   border: none;
   padding: 0 10px;
   margin-right: 0;
 }
-.employee i{
+.employee i {
   font-size: 20px;
 }
 .employee-body {
@@ -109,6 +129,9 @@ a {
   border: none;
   background-color: rgba(255, 255, 255, 0.842);
   margin-bottom: 10px;
+}
+.employee-body:hover {
+  background-color: rgba(197, 193, 193, 0.336);
 }
 .employee-name {
   text-transform: capitalize;
