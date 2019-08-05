@@ -9,17 +9,26 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
   //states
   let allEmployeesPortfolio = [];
   const [portfolio, setPorfolio] = useState({});
+  const [itemToDelete, setItemToDelete] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [deleteModalIsOpen, setDeleteModalIsOpen] = useState(false);
 
   //functions
-  const openModal = () => {
+
+  //to open the modal for editing
+  const openModal = e => {
     setModalIsOpen(true);
   };
 
+  //to close the modal after editing
   const closeModal = () => {
     setModalIsOpen(false);
   };
+  const openDeleteModal = e => {
+    setDeleteModalIsOpen(true);
+  };
 
+  //to edit/change employee details
   const changeDetails = (employee, id) => {
     const newEmployeePortfolio = [...allEmployeesPortfolio];
     newEmployeePortfolio.map(e => {
@@ -43,18 +52,13 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
       return newEmployeePortfolio;
     });
   };
-  const checkAllBoxes=()=>{
-
-  }
 
   const renderEmployeesInfo = () => {
     return (
       <div className="employees-info">
         <div className="employee employee-header">
           <section className="checkbox">
-            <input type="checkbox" onChange={()=>{
-              checkAllBoxes()
-            }} />
+            <input type="checkbox" className="checkbox" />
           </section>
           <section className="avatar" />
           <section className="employee-name">
@@ -85,7 +89,7 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
           return (
             <div key={index} className="employee employee-body">
               <section className="checkbox">
-                <input type="checkbox" name="employee" />
+                <input type="checkbox" name="employee" className="checkbox" />
               </section>
               <section className="avatar">
                 <img src={employee.avatar_url} alt="avatar" />
@@ -122,7 +126,8 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
                   <i
                     className="far fa-trash-alt"
                     onClick={() => {
-                      deleteEntry(employee.login);
+                      setItemToDelete(employee.login);
+                      openDeleteModal(employee);
                     }}
                   />
                 </button>
@@ -140,6 +145,32 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
             onRequestClose={closeModal}
             changeDetails={changeDetails}
           />
+        </Modal>
+
+        <Modal
+          className="delete-modal"
+          isOpen={deleteModalIsOpen}
+          contentLabel="Example Modal"
+        >
+          <h3>
+            Are you sure you want to delete <span>{itemToDelete}</span>{" "}
+            Portfolio?
+          </h3>
+          <button
+            onClick={() => {
+              deleteEntry(itemToDelete);
+              setDeleteModalIsOpen(false);
+            }}
+          >
+            Yes
+          </button>{" "}
+          <button
+            onClick={() => {
+              setDeleteModalIsOpen(false);
+            }}
+          >
+            No
+          </button>
         </Modal>
       </div>
     );
