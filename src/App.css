@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: rgb(202, 198, 198);
   font-family: "Artifika";
   width: 100%;
   display: flex;
@@ -11,39 +11,43 @@ a {
   color: inherit;
 }
 .app {
-  background-color: rgb(155, 154, 154);
-  /* height: 80vh; */
-  width: 80vw;
+  background-color: rgb(182, 181, 181);
+  margin: 40px;
 }
 .main-header {
   display: flex;
-  height: 10vh;
-  background-color: white;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  background-color: white;
+  height: 80px;
 }
 .nav-bar {
-  display: grid;
-  grid-template-columns: 20% 55% 25%;
-  background-color: white;
-  width: 100%;
-  margin: 0;
-}
-.nav-brand {
-  margin-right: auto;
-}
-.nav-links {
   display: flex;
   justify-content: space-between;
-  color: rgb(112, 106, 106);
+  align-items: center;
+  width: 90%;
+  height: 100%;
 }
-.icons {
-  display: flex;
-  justify-content: flex-end;
+.nav-brand {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.brand-name {
+  padding-left: 15px;
+}
+.nav-links span {
+  padding: 25px 15px;
+  font-size: 20px;
+}
+.nav-links span:hover {
+  background-color: rgba(73, 156, 73, 0.24);
+}
+.active-link {
+  border-bottom: 4px solid rgb(69, 172, 69);
 }
 .icons span {
-  padding-left: 10px;
+  padding-left: 15px;
+  font-size: 20px;
 }
 .content {
   display: flex;
@@ -60,11 +64,13 @@ a {
   height: 10vh;
 }
 .sub-header span {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .sub-header button {
   border: none;
-  background-color: rgb(19, 122, 19);
+  background-color: rgb(69, 172, 69);
+  color: rgba(250, 235, 215, 0.74);
   height: 35px;
   width: 120px;
   border-radius: 30%;
@@ -103,32 +109,30 @@ a {
 }
 .employee {
   display: grid;
-  grid-template-columns: 6% 8% 28% 17% 17% 24%;
-  border-radius: 4px;
+  grid-template-columns: 7% 10% 32% 17% 17% 17%;
   font-size: 0.7em;
-  padding-right: 0;
+  padding: 20px 25px;
 }
-
 .employees-info img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-right: 10px;
+}
+.employee-header {
+  font-weight: bolder;
+}
+.employee-body {
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.842);
+  margin-bottom: 10px;
 }
 .employee button {
   background-color: inherit;
   border: none;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   margin-right: 0;
-}
-.employee i {
-  font-size: 20px;
-}
-.employee-body {
-  padding: 20px 0;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.842);
-  margin-bottom: 10px;
+  font-size: 1.8em;
 }
 .employee-body:hover {
   background-color: rgba(197, 193, 193, 0.336);
