@@ -8,22 +8,25 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
   const save = () => {
     setemployeeDetails(employeeDetails);
     changeDetails(employeeDetails, employeeDetails.id);
+    onRequestClose()
   };
   const updateDetails = e => {
     setemployeeDetails({ ...employeeDetails, [e.target.name]: e.target.value });
   };
   const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)"
-    }
+    border: "1px solid rgb(85, 84, 84)",
+    color: "white",
+    display: "flex",
+    flexFlow: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "500px",
+    
   };
   return (
+<div >
     <div style={customStyles}>
+    <div style={{width: "500px"}}>
       <h2>Edit {details.name} Details</h2>
       <button onClick={onRequestClose}>Close</button>
       <button
@@ -91,6 +94,8 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
           />
         </div>
       </form>
+    </div>
+    </div>
     </div>
   );
 };
