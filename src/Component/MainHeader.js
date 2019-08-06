@@ -1,11 +1,13 @@
 import React from "react";
 
-
 const MainHeader = () => {
   return (
     <div className="main-header">
       <div className="nav-bar">
-        <section className="nav-brand">Internia</section>
+        <section className="nav-brand">
+          <i className="far fa-check-circle" style={{ color: "red" }} />
+          <span className="brand-name">internia</span>
+        </section>
         <section className="nav-links">
           <span>
             <a href="/">Calender</a>
@@ -13,7 +15,7 @@ const MainHeader = () => {
           <span>
             <a href="/">Statistic</a>
           </span>
-          <span>
+          <span className="active-link">
             <a href="/">Employee</a>
           </span>
           <span>
@@ -25,13 +27,19 @@ const MainHeader = () => {
         </section>
         <section className="icons">
           <span>
-            <a href="/"><i className="far fa-bell"></i></a>
+            <a href="/">
+              <i className="far fa-bell" />
+            </a>
           </span>
           <span>
-            <a href="/"><i className="far fa-envelope"></i></a>
+            <a href="/">
+              <i className="far fa-envelope" />
+            </a>
           </span>
           <span>
-            <a href="/"><i className="fas fa-user-tie"></i></a>
+            <a href="/">
+              <i className="fas fa-user-tie" />
+            </a>
           </span>
         </section>
       </div>
