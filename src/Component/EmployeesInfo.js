@@ -62,16 +62,16 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
           </section>
           <section className="avatar" />
           <section className="employee-name">
-            <h4>{`EMPLOYEE ${employees.length}`}</h4>
+            <span>{`EMPLOYEE ${employees.length}`}</span>
           </section>
           <section className="employee-salary">
-            <h4>SALARY</h4>
+            <span>SALARY</span>
           </section>
           <section className="employee-status">
-            <h4>STATUS</h4>
+            <span>STATUS</span>
           </section>
           <section className="manage">
-            <h4>MANAGE</h4>
+            <span>MANAGE</span>
           </section>
         </div>
         {employees.map((employee, index) => {
