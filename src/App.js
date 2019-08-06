@@ -5,10 +5,10 @@ import SubHeader from "./Component/SubHeader";
 import Employees from "./Component/EmployeesSection";
 
 const App = () => {
-  
   return (
     <div className="app">
       <MainHeader />
+      <div className="overlay" />
       <div className="content">
         <SubHeader />
         <Employees />
