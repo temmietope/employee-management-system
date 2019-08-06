@@ -21,6 +21,7 @@ const SideBar = () => {
   };
 
   return (
+    <>
     <div className="side-bar">
       <div>
         <span>
@@ -33,7 +34,7 @@ const SideBar = () => {
         </span>
       </div>
       <div>
-        <h4>Project</h4>
+        <h4>PROJECT</h4>
         <ul>
           <li
             onClick={e => {
@@ -80,8 +81,8 @@ const SideBar = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <h4>Status</h4>
+      <div className="side-bar-status">
+        <h4>STATUS</h4>
         <ul>
           <li
             onClick={e => {
@@ -100,8 +101,13 @@ const SideBar = () => {
             <span>Part-time</span>
           </li>
         </ul>
+        <div className="add-project">
+        <button><span>add project</span></button>
+        </div>
+
       </div>
     </div>
+    </>
   );
 };
 export default SideBar;
