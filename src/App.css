@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(202, 198, 198);
+  background-color: rgba(202, 198, 198, 0.534);
   font-family: "Artifika";
   width: 100%;
   display: flex;
@@ -11,7 +11,6 @@ a {
   color: inherit;
 }
 .app {
-  background-color: rgb(182, 181, 181);
   margin: 40px;
 }
 .main-header {
@@ -49,18 +48,24 @@ a {
   padding-left: 15px;
   font-size: 20px;
 }
+.overlay {
+  height: 720px;
+  width: 80vw;
+  position: absolute;
+  background-color: rgba(187, 183, 183, 0.384);
+}
 .content {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  position: relative;
   width: 80vw;
 }
 .sub-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 92%;
   height: 10vh;
 }
 .sub-header span {
@@ -73,18 +78,24 @@ a {
   color: rgba(250, 235, 215, 0.74);
   height: 35px;
   width: 120px;
-  border-radius: 30%;
+  border-top-right-radius: 30%;
 }
 
 .employees-section {
   display: grid;
-  width: 80%;
+  width: 92%;
   grid-template-columns: 35% 65%;
   padding: 0;
 }
 .side-bar {
   background-color: rgba(255, 255, 255, 0.842);
-  padding: 40px 20px;
+  border-radius: 12px;
+  padding: 40px 20px 0 20px;
+  height: 660px;
+}
+.side-bar h4 {
+  color: rgba(173, 172, 172, 0.788);
+  margin: 30px 0;
 }
 .side-bar ul {
   margin-left: 0;
@@ -103,6 +114,20 @@ a {
 .side-bar i {
   margin-right: 15px;
   font-size: 1.2em;
+}
+.add-project {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  width: 100%;
+}
+.side-bar button {
+  background-color: rgb(240, 93, 240);
+  color: beige;
+  border: 0;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 .employees-info {
   margin-left: 10px;
@@ -130,7 +155,6 @@ a {
 .employee button {
   background-color: inherit;
   border: none;
-  /* padding: 0 10px; */
   margin-right: 0;
   font-size: 1.8em;
 }
@@ -139,4 +163,7 @@ a {
 }
 .employee-name {
   text-transform: capitalize;
+}
+.manage i {
+  color: rgba(173, 172, 172, 0.788);
 }
