@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MainHeader = () => {
   return (
@@ -27,17 +28,22 @@ const MainHeader = () => {
         </section>
         <section className="icons">
           <span>
-            <a href="/">
-              <i className="far fa-bell" />
+            <a href="/" title="Notification">
+              <i
+                className="far fa-bell"
+                onClick={() => {
+                  alert("No new notification");
+                }}
+              />
             </a>
           </span>
           <span>
-            <a href="/">
+            <Link to="/ContactUs" title="Contact Us">
               <i className="far fa-envelope" />
-            </a>
+            </Link>
           </span>
           <span>
-            <a href="/">
+            <a href="/" title="Page">
               <i className="fas fa-user-tie" />
             </a>
           </span>
