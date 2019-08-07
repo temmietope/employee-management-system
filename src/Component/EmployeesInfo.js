@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { jobtitle, salary, status, time, duration } from "../utils/constants";
-import ModalForm from "./Modal";
+import EditModal from "./EditModal";
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -51,6 +51,16 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
       }
       return newEmployeePortfolio;
     });
+  };
+
+  const deleteModalStyle = {
+    content: {
+      display: "flex",
+      flexFlow: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "600px"
+    }
   };
 
   const renderEmployeesInfo = () => {
@@ -140,7 +150,7 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
           isOpen={modalIsOpen}
           contentLabel="Example Modal"
         >
-          <ModalForm
+          <EditModal
             details={portfolio}
             onRequestClose={closeModal}
             changeDetails={changeDetails}
@@ -150,27 +160,30 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
         <Modal
           className="delete-modal"
           isOpen={deleteModalIsOpen}
+          style={deleteModalStyle}
           contentLabel="Example Modal"
         >
           <h3>
             Are you sure you want to delete <span>{itemToDelete}</span>{" "}
             Portfolio?
           </h3>
-          <button
-            onClick={() => {
-              deleteEntry(itemToDelete);
-              setDeleteModalIsOpen(false);
-            }}
-          >
-            Yes
-          </button>{" "}
-          <button
-            onClick={() => {
-              setDeleteModalIsOpen(false);
-            }}
-          >
-            No
-          </button>
+          <div style={{ display: "flex" }}>
+            <button
+              onClick={() => {
+                deleteEntry(itemToDelete);
+                setDeleteModalIsOpen(false);
+              }}
+            >
+              Yes
+            </button>{" "}
+            <button
+              onClick={() => {
+                setDeleteModalIsOpen(false);
+              }}
+            >
+              No
+            </button>
+          </div>
         </Modal>
       </div>
     );
