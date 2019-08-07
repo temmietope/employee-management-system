@@ -18,13 +18,19 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
     flexFlow: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "500px"
+    height: "600px"
   };
   return (
     <div>
       <div style={customStyles}>
-        <div style={{ width: "500px" }}>
-          <h2>Edit {details.name} Details</h2>
+        <div style={{ width: "500px" }} className="edit-modal">
+          <h2>
+            Edit{" "}
+            <span style={{ fontSize: "1.2em", textTransform: "uppercase" }}>
+              {details.name}
+            </span>{" "}
+            Details
+          </h2>
           <button onClick={onRequestClose}>Close</button>
           <button
             onClick={() => {
@@ -34,7 +40,7 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
             Save
           </button>
           <form>
-            <div>
+            <div className="label">
               <label>JobTitle</label>
               <input
                 type="text"
@@ -45,7 +51,7 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
                 }}
               />
             </div>
-            <div>
+            <div className="label">
               <label>Salary</label>
               <input
                 type="text"
@@ -57,7 +63,7 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
               />{" "}
               GBP
             </div>
-            <div>
+            <div className="label">
               <label>Full-time/parttime</label>
               <input
                 type="text"
@@ -68,7 +74,7 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
                 }}
               />
             </div>
-            <div>
+            <div className="label">
               <label>Status</label>
               <input
                 type="text"
@@ -79,7 +85,7 @@ const ModalForm = ({ details, onRequestClose, changeDetails }) => {
                 }}
               />
             </div>
-            <div>
+            <div className="label">
               <label>Duration</label>
               <input
                 type="text"
