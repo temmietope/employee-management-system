@@ -39,8 +39,8 @@ const EmployeesInfo = ({ employees, deleteEntry }) => {
         if (e.salary !== employee.salary) {
           salary[id] = employee.salary;
         }
-        if (e.status !== employee.salary) {
-          status[id] = employee.salary;
+        if (e.status !== employee.status) {
+          status[id] = employee.status;
         }
         if (e.time !== employee.time) {
           time[id] = employee.time;
