@@ -1,18 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import MainHeader from "./Component/MainHeader";
-import SubHeader from "./Component/SubHeader";
-import Employees from "./Component/EmployeesSection";
+import ContactUs from "./Component/ContactUs";
+import Home from "./Component/Home";
 
 const App = () => {
   return (
     <div className="app">
-      <MainHeader />
-      <div className="overlay" />
-      <div className="content">
-        <SubHeader />
-        <Employees />
-      </div>
+      <Router>
+        <>
+          <Route exact path="/" component={Home} />
+          <Route path="/ContactUs" component={ContactUs} />
+        </>
+      </Router>
     </div>
   );
 };

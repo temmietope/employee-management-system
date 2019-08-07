@@ -49,7 +49,7 @@ a {
   font-size: 20px;
 }
 .overlay {
-  height: 720px;
+  height: 750px;
   width: 80vw;
   position: absolute;
   background-color: rgba(187, 183, 183, 0.384);
@@ -166,4 +166,59 @@ a {
 }
 .manage i {
   color: rgba(173, 172, 172, 0.788);
+}
+.edit-modal button {
+  background-color: rgb(240, 93, 240);
+  font-size: 1em;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.edit-modal form {
+  font-size: 1.5em;
+  margin: 30px 0;
+}
+.edit-modal form .label {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 30px;
+}
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+.contact-us form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}
+.contact-us label {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  font-size: 1.2em;
+}
+.contact-us textarea {
+  height: 80px;
+}
+.contact-us .submit {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+}
+.contact-us .submit .btn {
+  padding: 20px;
+  background-color: rgb(240, 93, 240);
+  margin: 20px;
+  border: none;
+}
+.contact-us .submit .back {
+  padding: 10px;
+  border: none;
+  background-color: rgb(64, 209, 175);
 }
