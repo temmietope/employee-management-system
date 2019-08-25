@@ -24,11 +24,10 @@ const SideBar = () => {
     <>
     <div className="side-bar">
       <div>
-        <span>
+        <span className= "all-employees">
           {" "}
           <i
             className="far fa-check-circle"
-            style={{ color: "red", fontSize: "33px" }}
           />
           All Employees
         </span>
