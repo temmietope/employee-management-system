@@ -1,18 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import "./App.css";
-import ContactUs from "./Component/ContactUs";
-import Home from "./Component/Home";
+import * as routes from "./Component/constants/routes"
+import Home from "./Component/Home/index";
+import Navigation from "./Component/Navigation";
+import EmployeesManagement from "./Component/EmployeesManagement/index"
 
 const App = () => {
   return (
     <div className="app">
-      <Router>
-        <>
-          <Route exact path="/" component={Home} />
-          <Route path="/ContactUs" component={ContactUs} />
-        </>
-      </Router>
+      <Navigation />
+      <Route exact path={routes.home} component={Home} />
+      <Route path={routes.employee} component={EmployeesManagement} />
     </div>
   );
 };

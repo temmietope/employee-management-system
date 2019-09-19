@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+}
+.navigation nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+nav .nav-brand {
+  font-weight: bolder;
+  font-size: 30px;
+}
+nav .brand-name {
+  padding-left: 15px;
+}
+nav .nav-links span {
+  padding: 25px 15px;
+  font-size: 20px;
+}
+nav .nav-links span:hover {
+  background-color: rgba(73, 156, 73, 0.24);
+}
+nav .active-link {
+  border-bottom: 4px solid rgb(69, 172, 69);
+}
+nav .icons span{
+  padding-left: 15px;
+  font-size: 20px;
+}

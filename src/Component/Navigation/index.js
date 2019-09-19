@@ -1,10 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
+import "./Navigation.css"
 
-const MainHeader = () => {
+const Navigation = () => {
   return (
-    <div className="main-header">
-      <div className="nav-bar">
+    <div className="navigation">
+      <nav>
         <section className="nav-brand">
           <i className="far fa-check-circle" style={{ color: "red" }} />
           <span className="brand-name">internia</span>
@@ -38,9 +39,9 @@ const MainHeader = () => {
             </a>
           </span>
           <span>
-            <Link to="/ContactUs" title="Contact Us">
+            <a href="/" title="Contact Us">
               <i className="far fa-envelope" />
-            </Link>
+            </a>
           </span>
           <span>
             <a href="/" title="Page">
@@ -48,9 +49,8 @@ const MainHeader = () => {
             </a>
           </span>
         </section>
-      </div>
+      </nav>
     </div>
-  );
-};
-
-export default MainHeader;
+  )
+}
+export default Navigation

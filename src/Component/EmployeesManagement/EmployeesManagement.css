@@ -1,0 +1,115 @@
+.employees {
+    margin-left: 10px;
+}
+.employee {
+    display: grid;
+    grid-template-columns: 7% 10% 32% 17% 17% 17%;
+    font-size: 0.7em;
+    padding: 20px 25px;
+}
+.employees img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.employee-header {
+    font-weight: bolder;
+}
+.employee-body {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    margin-bottom: 10px;
+}
+.employee button {
+    background-color: inherit;
+    border: none;
+    margin-right: 0;
+    font-size: 1.8em;
+}
+.employee-body:hover {
+    background-color: rgba(233, 227, 227, 0.719);
+}
+.employee-name {
+    text-transform: capitalize;
+}
+.manage i {
+    color: rgb(173, 172, 172);
+}
+.edit-modal {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.edit-modal form {
+    border: 1px solid rgb(82, 76, 76);
+    width: 500px;
+    padding: 30px;
+    border-radius: 5px;
+}
+.edit-modal form label {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.edit-modal form label {
+    font-weight: bold
+}
+.edit-modal form label input[type= text] {
+    border-radius: 8px;
+    border: 2px solid rgb(240, 93, 240);
+    height: 30px;
+    font-family: "Artifika";
+}
+.edit-modal form label select {
+    border-radius: 8px;
+    border: 2px solid rgb(240, 93, 240);
+    height: 30px;
+    font-family: "Artifika";
+}
+.edit-modal .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.edit-modal button {
+    background-color: rgb(240, 93, 240);
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 40px;
+}
+.delete-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;  
+}
+.delete-modal h2{
+    font-weight: inherit;
+    font-size: 1em;
+}
+.delete-modal h2 span{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.delete-modal section {
+    border-radius: 8px;
+    border: 2px solid rgb(240, 93, 240);
+    padding: 20px;
+}
+.delete-modal section .btn {
+    text-align: center;
+}
+.delete-modal section .btn button {
+    background-color: rgb(240, 93, 240);
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-family: "Artifika";
+}

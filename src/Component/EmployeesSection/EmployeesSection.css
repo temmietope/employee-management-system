@@ -1,0 +1,6 @@
+.employees-section {
+    display: grid;
+    width: 92%;
+    grid-template-columns: 35% 65%;
+    padding: 0;
+}

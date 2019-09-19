@@ -1,0 +1,13 @@
+.overlay {
+    height: 720px;
+    width: 80vw;
+    position: absolute;
+    background-color: rgba(187, 183, 183, 0.384);
+}
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+}
