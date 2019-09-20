@@ -1,11 +1,13 @@
 .employees {
     margin-left: 10px;
 }
-.employee-list {
-    text-align: center
+.no-employee {
+    text-align: center;
+    font-size: 7px
 }
 .loading {
-    text-align: center
+    text-align: center;
+    font-size: 7px
 }
 .employee {
     display: grid;
@@ -65,13 +67,13 @@
 }
 .edit-modal form label input[type= text] {
     border-radius: 8px;
-    border: 2px solid rgba(218, 8, 8, 0.801);
+    border: 2px solid rgba(216, 82, 82, 0.226);
     height: 30px;
     font-family: "Artifika";
 }
 .edit-modal form label select {
     border-radius: 8px;
-    border: 2px solid rgba(218, 8, 8, 0.801);
+    border: 2px solid rgba(216, 82, 82, 0.226);
     height: 30px;
     font-family: "Artifika";
 }
@@ -81,7 +83,7 @@
     align-items: center
 }
 .edit-modal button {
-    background-color: rgba(218, 8, 8, 0.801);
+    background-color: rgba(216, 82, 82, 0.226);
     font-size: 1em;
     border: none;
     border-radius: 5px;
@@ -104,14 +106,14 @@
 }
 .delete-modal section {
     border-radius: 8px;
-    border: 2px solid rgba(218, 8, 8, 0.801);
+    border: 2px solid rgba(216, 82, 82, 0.226);
     padding: 20px;
 }
 .delete-modal section .btn {
     text-align: center;
 }
 .delete-modal section .btn button {
-    background-color: rgba(218, 8, 8, 0.801);
+    background-color: rgba(216, 82, 82, 0.226);
     font-size: 1em;
     border: none;
     border-radius: 5px;
