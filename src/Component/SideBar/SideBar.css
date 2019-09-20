@@ -54,13 +54,13 @@
         align-items: center;
         border-radius: 5px;
         padding: 0;
-        height: 315px;
+        height: 350px;
         text-align: center;
     }
     .side-bar-wrapper{
         width: 100%;
         margin: 5px;
-        height: 308px;
+        height: 370px;
     }
     .side-bar .all-employees i{
         font-size: 17px;
@@ -89,12 +89,12 @@
     }
     .side-bar button {
         border-radius: 2px;
-        margin-top: 17px;
+        margin-top: 28px;
         padding: 3px 4px;
         font-size: 4px;
     }
     .side-bar-projects {
-        margin-top: 20px
+        margin-top: 40px
     }
     .side-bar-projects li {
         padding: 0
@@ -103,6 +103,6 @@
         padding: 0;
     }
     .side-bar-status {
-        margin-top: 20px
+        margin-top: 40px
     }
 }

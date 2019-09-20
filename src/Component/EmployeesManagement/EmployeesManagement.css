@@ -22,6 +22,10 @@
 }
 .employee-header {
     font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.466);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .employee-body {
     border: none;
@@ -133,14 +137,20 @@
         grid-template-columns: 5% 16% 34% 18% 17% 14%;
     }
     .employees img {
-        width: 18px;
-        height: 18px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
-        margin-left: 5px
+        margin-left: 10px
     }
     .employee-body {
         border-radius: 5px;
         margin-bottom: 4px;
+    }
+    .employee-header {
+        border-radius: 5px;
+        margin-bottom: 4px;
+        text-align: center;
+        grid-template-columns: 12% 0% 41% 17% 16% 14%;
     }
     .employee button {
         font-size: 10px;
@@ -179,5 +189,11 @@
     .delete-modal section .btn button {
         font-size: 8px;
         padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .employee {
+        font-size: 6px
     }
 }
