@@ -15,7 +15,6 @@ const EditEmployee = ({ employee, onRequestClose, editEmployee }) => {
     const onSubmit = (e) => {
         e.preventDefault()
         editEmployee(employeePortfolio, employeePortfolio.id)
-        console.log(employeePortfolio)
         onRequestClose()
     }
     return (
@@ -54,8 +53,8 @@ const EditEmployee = ({ employee, onRequestClose, editEmployee }) => {
                     <input type="text" name="duration" placeholder={employeePortfolio.duration} onChange={(e) => { updateEmployee(e) }} />
                 </label>
                 <div className="btn">
-                <button onClick={() => { onRequestClose() }}>Cancel</button>
-                <button type="submit">Save</button>
+                    <button onClick={() => { onRequestClose() }}>Cancel</button>
+                    <button type="submit">Save</button>
                 </div>
             </form>
 
