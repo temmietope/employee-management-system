@@ -86,7 +86,6 @@ const EmployeesManagement = () => {
 
   //to edit selected employee and set new portfolio to state
   const editEmployee = (edittedEmployee, id) => {
-    console.log(edittedEmployee)
     const allEmployees = [...employees]
     allEmployees.map((e) => {
       if (e.id === id) {
@@ -130,9 +129,9 @@ const EmployeesManagement = () => {
         </Modal>
 
         {/* delete modal */}
-        <Modal 
-          className="delete-modal" 
-          isOpen={deleteModalIsOpen} 
+        <Modal
+          className="delete-modal"
+          isOpen={deleteModalIsOpen}
         >
           <DeleteEmployee
             employee={employeeToDelete}
