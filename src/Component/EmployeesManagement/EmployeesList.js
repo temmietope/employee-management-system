@@ -1,7 +1,6 @@
 import React from "react";
 
 
-
 const EmployeeesList = ({ employees, isLoading, emitEmployeeToDelete, emitEmployeeToEdit, openEditModal, openDeleteModal }) => {
     const renderEmployeesList = () => {
         return (
@@ -66,21 +65,13 @@ const EmployeeesList = ({ employees, isLoading, emitEmployeeToDelete, emitEmploy
         )
     }
 
-    const renderLoading = () => {
-        return (
-            <div className="loading">
-                <span>Loading Employees List...</span>
-            </div>
-        )
-    }
-
     return (
         <div className="employees-list">
             {isLoading ?
-                renderLoading() :
+                <div className="loading">Loading Employees List...</div> :
                 employees.length ?
                     renderEmployeesList() :
-                    <div style={{ textAlign: "center" }}>No Employee</div>
+                    <div className="no-employee">No Employee</div>
             }
         </div>
     )
