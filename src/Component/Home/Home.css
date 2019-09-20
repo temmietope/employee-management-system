@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 768px){
     .overlay {
-        height: 394px;
+        height: 366px;
         width: 100%;
     }
     .content {
@@ -23,18 +23,23 @@
 }
 @media screen and (max-width: 360px){
     .overlay {
-        height: 386px;
+        height: 346px;
     }
 }
 @media screen and (width: 768px){
     .overlay {
-        height: 410px;
+        height: 365px;
     }
 }
 
 @media screen and (max-width: 320px){
     .overlay {
-        height: 383px;        
+        height: 340px;        
+    }
+}
+@media screen and (max-width: 414px){
+    .overlay {
+        height: 350px;
     }
 }
 
