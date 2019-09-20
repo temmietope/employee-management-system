@@ -12,92 +12,11 @@ a {
 }
 .app {
   margin: 40px;
+  position: relative;
 }
 
-/* @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   .app {
-    margin: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center
-  } 
-  .main-header {
-    height: 120px;
-  }
-  .nav-bar {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-  }
-  .nav-brand {
-    font-size: 25px;
-  }
-  .nav-links span {
-    padding: 7px 8px;
-    font-size: 13px;
-  }
-  .icons span {
-    font-size: 12px;
-  }
-  .sub-header span {
-    font-size: 18px;
-  }
-  .sub-header button {
-    height: 20px;
-    width: 120px;
-    border-top-right-radius: 15%;
-  }
-  .side-bar {
-    border-radius: 8px;
-    padding: 20px 10px 0 10px;
-    height: 660px;
-  }
-  .side-bar .all-employees{
-    font-size: 0.8em;
-    margin-bottom: 15px;
-  }
-  .side-bar .all-employees i{
-    font-size: 10px;
-  }
-  .side-bar ul {
-    margin-right: 5px;
-  }
-  .side-bar li {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 10px 0 10px 5px;
-    font-size: 0.6em;
-    list-style: none;
-    border-radius: 6px;
-  }
-  .side-bar li:hover {
-    background-color: rgba(231, 199, 199, 0.856);
-  }
-  .side-bar i {
-    margin-right: 0;
-    font-size: 1em;
-  }
-  .add-project {
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-    width: 100%;
-  }
-  .side-bar button {
-    background-color: rgb(240, 93, 240);
-    color: beige;
-    border: 0;
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-  .side-bar h4{
-    font-size: 0.8em;
-    padding: 0;
     margin: 0
   }
-} */
+}

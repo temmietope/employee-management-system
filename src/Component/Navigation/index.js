@@ -6,7 +6,7 @@ const Navigation = () => {
     <div className="navigation">
       <nav>
         <section className="nav-brand">
-          <i className="far fa-check-circle" style={{ color: "red" }} />
+          <i className="far fa-check-circle" />
           <span className="brand-name">internia</span>
         </section>
         <section className="nav-links">

@@ -1,18 +1,24 @@
 .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+}
+.navigation .nav-brand i {
+  color: rgba(218, 8, 8, 0.801)
 }
 .navigation nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
 }
 nav .nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -32,4 +38,32 @@ nav .active-link {
 nav .icons span{
   padding-left: 15px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .navigation {
+    height: 50px;
+  }
+  .navigation nav {
+    justify-content: space-between;  
+    width: 100%;
+    padding: 5px;
+  }
+  nav .nav-brand {
+    font-size: 10px;
+  }
+  nav .brand-name {
+    padding-left: 5px;
+  }
+  nav .nav-links span {
+    padding: 15px 5px;
+    font-size: 8px;
+  }
+  nav .active-link {
+    border-bottom: 2px solid rgb(69, 172, 69);
+  }
+  nav .icons span{
+    padding-left: 3px;
+    font-size: 7px;
+  }
 }

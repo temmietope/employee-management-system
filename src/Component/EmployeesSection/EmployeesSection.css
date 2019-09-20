@@ -4,3 +4,10 @@
     grid-template-columns: 35% 65%;
     padding: 0;
 }
+
+@media screen and (max-width: 768px){
+    .employees-section {
+        grid-template-columns: 15% 85%;
+        padding: 0;
+    }
+}

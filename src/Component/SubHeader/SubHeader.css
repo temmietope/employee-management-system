@@ -23,3 +23,26 @@
   font-weight: bold;
   color: rgba(250, 235, 215, 0.74);
 }
+
+@media screen and (max-width: 768px){
+  .sub-header {
+    height: 6vh;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px
+  }
+  .sub-header span {
+    font-size: 12px;
+  }
+  .sub-header button {
+    border: none;
+    height: 3.5vh;
+    border-radius: 1px; 
+    border-top-right-radius: 4px;
+  }
+  .sub-header button span {
+    font-size: 8px;
+    padding: 0px;
+  }  
+}

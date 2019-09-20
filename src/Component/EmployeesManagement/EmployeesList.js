@@ -66,16 +66,23 @@ const EmployeeesList = ({ employees, isLoading, emitEmployeeToDelete, emitEmploy
         )
     }
 
+    const renderLoading = () => {
+        return (
+            <div className="loading">
+                <span>Loading Employees List...</span>
+            </div>
+        )
+    }
 
     return (
-        <>
+        <div className="employees-list">
             {isLoading ?
-                <span style={{ textAlign: "center" }}>Loading...</span> :
+                renderLoading() :
                 employees.length ?
-                    renderEmployeesList() : 
-                    <span style={{ textAlign: "center" }}>No Employee</span>
+                    renderEmployeesList() :
+                    <div style={{ textAlign: "center" }}>No Employee</div>
             }
-        </>
+        </div>
     )
 }
 
