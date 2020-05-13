@@ -1,80 +1,71 @@
-import React, { useState } from "react";
-import "./SideBar.css"
+import React from "react";
+import "./SideBar.css";
 
 const SideBar = () => {
-    const [lastClicked, setLastClicked] = useState(false);
+  return (
+    <nav className="side-bar main-menu">
+      <ul className="side-bar-wrapper">
+        <li>
+          <a href="#">
+            <i className="far fa-check-circle" />
+            <span className="all-employees-span nav-text">All Employees</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-atlassian" style={{ color: "forestgreen" }} />
+            <span className="nav-text">Aroma Sport</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-dochub" style={{ color: "darkmagenta" }} />
 
-    const resetBackgroundColor = () => {
-        const list = document.querySelectorAll("li");
-        list.forEach(list => {
-            list.style.backgroundColor = "inherit";
-        });
-    };
-    const onClick = e => {
-        if (!lastClicked) {
-            e.target.style.backgroundColor = "rgba(189, 169, 169, 0.856)";
-            setLastClicked(true);
-        }
-        if (lastClicked) {
-            resetBackgroundColor();
-            e.target.style.backgroundColor = "rgba(189, 169, 169, 0.856)";
-        }
-    };
+            <span className="nav-text">DSV</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              className="fas fa-puzzle-piece"
+              style={{ color: "midnightblue" }}
+            />
 
-    return (
-        <div className="side-bar">
-            <div className="side-bar-wrapper">
+            <span className="nav-text">Seafood Mall</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fas fa-otter" style={{ color: "olivedrab" }} />
 
-                <div>
-                    <span className="all-employees">
-                        <i className="far fa-check-circle" />
-                        <span className="all-employees-span">All Employees</span>
-                    </span>
-                </div>
-                <div className="side-bar-projects">
-                    <h4>PROJECT</h4>
-                    <ul>
-                        <li onClick={e => { onClick(e) }}>
-                            <i className="fab fa-atlassian" style={{ color: "forestgreen" }} />
-                            <span>Aroma Sport</span>
-                        </li>
-                        <li onClick={e => { onClick(e) }}>
-                            <i className="fab fa-dochub" style={{ color: "darkmagenta" }} />
-                            <span>DSV</span>
-                        </li>
-                        <li onClick={e => { onClick(e) }} >
-                            <i className="fas fa-puzzle-piece" style={{ color: "midnightblue" }} />
-                            <span>SeaFood Mall</span>
-                        </li>
-                        <li onClick={e => { onClick(e) }} >
-                            <i className="fas fa-otter" style={{ color: "olivedrab" }} />
-                            <span>FiveStar</span>
-                        </li>
-                        <li onClick={e => { onClick(e) }} >
-                            <i className="fas fa-hat-wizard" style={{ color: "saddlebrown" }} />
-                            <span>Zeto Bank</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="side-bar-status">
-                    <h4>STATUS</h4>
-                    <ul>
-                        <li onClick={e => { onClick(e) }} >
-                            <i className="fas fa-battery-full" style={{ color: "maroon" }} />
-                            <span>Full-time</span>
-                        </li>
-                        <li onClick={e => { onClick(e) }} >
-                            <i className="fas fa-battery-half" style={{ color: "orangered" }} />
-                            <span>Part-time</span>
-                        </li>
-                    </ul>
-                    <div className="add-project">
-                        <button><span>add project</span></button>
-                    </div>
+            <span className="nav-text">FiveStar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fas fa-hat-wizard" style={{ color: "saddlebrown" }} />
 
-                </div>
-            </div>
-        </div>
-    );
+            <span className="nav-text">Zeto Bank</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i className="fas fa-battery-full" style={{ color: "maroon" }} />
+
+            <span className="nav-text">Full time</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i className="fas fa-battery-half" style={{ color: "orangered" }} />
+
+            <span className="nav-text">Part-time</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 export default SideBar;
