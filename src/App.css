@@ -33,6 +33,7 @@ a {
 .app {
   border: 1px solid black;
   position: relative;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

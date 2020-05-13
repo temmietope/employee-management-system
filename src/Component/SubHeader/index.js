@@ -4,8 +4,8 @@ import "./SubHeader.css"
 const SubHeader = () => {
   return (
     <div className="sub-header">
-      <span>employee</span>
-      <button><span>add employee</span></button>
+      <span>Employee</span>
+      <button><span>Add Employee</span></button>
     </div>
   );
 };

@@ -2,26 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 92%;
-  height: 10vh;
+  width: 100%;
+  padding: 0.7rem 0.5rem ;
+  box-sizing: border-box;
+  /* height: 2rem; */
 }
 .sub-header span {
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: bolder;
+  color: rgb(56, 52, 52);
 }
 .sub-header button {
   border: none;
+  background-color: rgba(128, 255, 0, 0.288);
+  padding: 0.6rem 1.8rem;
+  /* border: none;
   height: 40px;
   background-color: rgb(69, 172, 69);
-  font-family: "Artifika";
-  border-radius: 3px; 
-  border-top-right-radius: 20px;
+  font-family: "Artifika"; */
+  border-radius: 100px 100px; 
+  /* border-top-right-radius: 20px; */
 }
 .sub-header button span {
-  font-size: 15px;
+  font-size: 0.8rem;
+
+  /* font-size: 15px;
   padding: 20px;
   font-weight: bold;
-  color: rgba(250, 235, 215, 0.74);
+  color: rgba(250, 235, 215, 0.74); */
 }
 
 @media screen and (max-width: 768px){

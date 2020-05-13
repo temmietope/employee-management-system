@@ -1,15 +1,20 @@
+.home-wrapper {
+    width: 85vw;
+    box-sizing: border-box;
+}
 .overlay {
     height: 740px;
     width: 80vw;
     position: absolute;
     background-color: rgba(187, 183, 183, 0.384);
+    border: 1px solid black;
 }
 .content {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     position: relative;
-    width: 80vw;
+    width: 100%
 }
 
 @media screen and (max-width: 768px){
