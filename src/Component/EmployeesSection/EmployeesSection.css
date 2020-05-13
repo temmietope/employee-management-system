@@ -1,6 +1,7 @@
 .employees-section {
   padding: 0;
   width: 100%;
+  height: 680px;
 }
 
 @media screen and (max-width: 768px) {

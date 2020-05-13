@@ -7,7 +7,7 @@ const Navigation = () => {
       <nav>
         <section className="nav-brand">
           <i className="far fa-check-circle" />
-          <span className="brand-name">internia</span>
+          <span className="brand-name">MARKER</span>
         </section>
         <section className="nav-links">
           <span>

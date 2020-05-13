@@ -1,5 +1,4 @@
 import React from "react";
-import "./SideBar.css";
 
 const SideBar = () => {
   return (
@@ -7,19 +6,25 @@ const SideBar = () => {
       <ul className="side-bar-wrapper">
         <li>
           <a href="#">
-            <i className="far fa-check-circle" />
+            <i className="far fa-check-circle fa-icon" />
             <span className="all-employees-span nav-text">All Employees</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fab fa-atlassian" style={{ color: "forestgreen" }} />
+            <i
+              className="fab fa-atlassian fa-icon"
+              style={{ color: "forestgreen" }}
+            />
             <span className="nav-text">Aroma Sport</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fab fa-dochub" style={{ color: "darkmagenta" }} />
+            <i
+              className="fab fa-dochub fa-icon"
+              style={{ color: "darkmagenta" }}
+            />
 
             <span className="nav-text">DSV</span>
           </a>
@@ -27,7 +32,7 @@ const SideBar = () => {
         <li>
           <a href="#">
             <i
-              className="fas fa-puzzle-piece"
+              className="fas fa-puzzle-piece fa-icon"
               style={{ color: "midnightblue" }}
             />
 
@@ -36,14 +41,20 @@ const SideBar = () => {
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-otter" style={{ color: "olivedrab" }} />
+            <i
+              className="fas fa-otter fa-icon"
+              style={{ color: "olivedrab" }}
+            />
 
             <span className="nav-text">FiveStar</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-hat-wizard" style={{ color: "saddlebrown" }} />
+            <i
+              className="fas fa-hat-wizard fa-icon"
+              style={{ color: "saddlebrown" }}
+            />
 
             <span className="nav-text">Zeto Bank</span>
           </a>
@@ -51,7 +62,10 @@ const SideBar = () => {
 
         <li>
           <a href="#">
-            <i className="fas fa-battery-full" style={{ color: "maroon" }} />
+            <i
+              className="fas fa-battery-full fa-icon"
+              style={{ color: "maroon" }}
+            />
 
             <span className="nav-text">Full time</span>
           </a>
@@ -59,7 +73,10 @@ const SideBar = () => {
 
         <li>
           <a href="#">
-            <i className="fas fa-battery-half" style={{ color: "orangered" }} />
+            <i
+              className="fas fa-battery-half fa-icon"
+              style={{ color: "orangered" }}
+            />
 
             <span className="nav-text">Part-time</span>
           </a>

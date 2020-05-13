@@ -15,14 +15,13 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  min-height: 740px;
 }
 
 .fa-2x {
   font-size: 2em;
 }
-.fas,
-.far,
-.fab {
+.fa-icon {
   position: relative;
   display: table-cell;
   width: 60px;
@@ -39,12 +38,12 @@ nav.main-menu.expanded {
 }
 
 .main-menu {
-  background: #212121;
+  background: #3f3e3e;
   border-right: 1px solid #e5e5e5;
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 100%;
+  min-height: 740px;
   left: 0;
   width: 5.5%;
   overflow: hidden;
@@ -69,6 +68,7 @@ nav.main-menu.expanded {
   position: relative;
   display: block;
   width: 250px;
+  font-family: "Artifika";
 }
 
 .main-menu li > a {
@@ -77,8 +77,9 @@ nav.main-menu.expanded {
   border-collapse: collapse;
   border-spacing: 0;
   color: #999;
-  font-family: arial;
-  font-size: 14px;
+  font-size: 0.8rem;
+  font-family: "Artifika";
+  font-weight: bold;
   text-decoration: none;
   transform: translateZ(0) scale(1, 1);
   -webkit-transform: translateZ(0) scale(1, 1);
@@ -101,7 +102,7 @@ nav.main-menu.expanded {
   display: table-cell;
   vertical-align: middle;
   width: 190px;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Artifika";
 }
 
 .main-menu > ul.logout {

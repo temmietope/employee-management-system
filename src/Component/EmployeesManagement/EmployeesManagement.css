@@ -1,203 +1,204 @@
 .employees {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .no-employee {
-    text-align: center;
-    font-size: 7px
+  text-align: center;
+  font-size: 7px;
 }
 .loading {
-    text-align: center;
-    font-size: 7px
+  text-align: center;
+  font-size: 7px;
 }
 .employee {
-    display: grid;
-    grid-template-columns: 7% 10% 32% 17% 17% 17%;
-    font-size: 0.7em;
-    padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 7% 10% 32% 17% 17% 17%;
+  font-size: 0.8rem;
+  padding: 20px 25px;
 }
 .employees img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-left: 10px
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 .employee-header {
-    font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.466);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  font-weight: bolder;
+  background: #3f3e3e;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 .employee-body {
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.842);
-    margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.842);
+  margin-bottom: 10px;
 }
 .employee button {
-    background-color: inherit;
-    border: none;
-    margin-right: 0;
-    font-size: 1.8em;
+  background-color: inherit;
+  border: none;
+  margin-right: 0;
+  font-size: 1.8em;
 }
 .employee-body:hover {
-    background-color: rgba(233, 227, 227, 0.719);
+  background-color: rgba(233, 227, 227, 0.938);
 }
 .employee-name {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .manage i {
-    color: rgb(173, 172, 172);
+  color: rgb(173, 172, 172);
 }
 .edit-modal {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 .edit-modal form {
-    border: 1px solid rgb(82, 76, 76);
-    width: 500px;
-    padding: 30px;
-    border-radius: 5px;
+  border: 1px solid rgb(82, 76, 76);
+  width: 500px;
+  padding: 30px;
+  border-radius: 5px;
 }
 .edit-modal form label {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-bottom: 20px;
-    padding: 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 20px;
+  padding: 0;
 }
 .edit-modal form label {
-    font-weight: bold
+  font-weight: bold;
 }
-.edit-modal form label input[type= text] {
-    border-radius: 8px;
-    border: 2px solid rgba(216, 82, 82, 0.226);
-    height: 30px;
-    font-family: "Artifika";
+.edit-modal form label input[type="text"] {
+  border-radius: 8px;
+  border: 2px solid rgba(216, 82, 82, 0.226);
+  height: 30px;
+  font-family: "Artifika";
 }
 .edit-modal form label select {
-    border-radius: 8px;
-    border: 2px solid rgba(216, 82, 82, 0.226);
-    height: 30px;
-    font-family: "Artifika";
+  border-radius: 8px;
+  border: 2px solid rgba(216, 82, 82, 0.226);
+  height: 30px;
+  font-family: "Artifika";
 }
-.edit-modal .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center
+.edit-modal .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .edit-modal button {
-    background-color: rgba(216, 82, 82, 0.226);
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px 40px;
+  background-color: rgba(216, 82, 82, 0.226);
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 40px;
 }
 .delete-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
 }
-.delete-modal h2{
-    font-weight: inherit;
-    font-size: 1em;
+.delete-modal h2 {
+  font-weight: inherit;
+  font-size: 1em;
 }
-.delete-modal h2 span{
-    font-weight: bolder;
-    font-size: 1.5em;
+.delete-modal h2 span {
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 .delete-modal section {
-    border-radius: 8px;
-    border: 2px solid rgba(216, 82, 82, 0.226);
-    padding: 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(216, 82, 82, 0.226);
+  padding: 20px;
 }
 .delete-modal section .btn {
-    text-align: center;
+  text-align: center;
 }
 .delete-modal section .btn button {
-    background-color: rgba(216, 82, 82, 0.226);
-    font-size: 1em;
-    border: none;
+  background-color: rgba(216, 82, 82, 0.226);
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  font-family: "Artifika";
+}
+
+@media screen and (max-width: 768px) {
+  .employees {
+    margin-left: 3px;
+  }
+  .employee {
+    font-size: 7px;
+    padding: 7px 6px;
+    box-sizing: border-box;
+    grid-template-columns: 5% 16% 34% 18% 17% 14%;
+  }
+  .employees img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .employee-body {
     border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    font-family: "Artifika";
+    margin-bottom: 4px;
+  }
+  .employee-header {
+    border-radius: 5px;
+    margin-bottom: 4px;
+    text-align: center;
+    grid-template-columns: 12% 0% 41% 17% 16% 14%;
+  }
+  .employee button {
+    font-size: 7px;
+  }
+  .edit-modal form {
+    width: 250px;
+    padding: 15px;
+    border-radius: 3px;
+  }
+  .edit-modal form label {
+    margin-bottom: 10px;
+  }
+  .edit-modal form label input[type="text"] {
+    height: 20px;
+  }
+  .edit-modal form label select {
+    height: 20px;
+  }
+  .edit-modal button {
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .delete-modal {
+    margin: 80px 0;
+  }
+  .delete-modal h2 {
+    font-size: 10px;
+  }
+  .delete-modal h2 span {
+    font-size: 12px;
+  }
+  .delete-modal section {
+    padding: 10px;
+  }
+  .delete-modal section .btn button {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
 }
 
-@media screen and (max-width: 768px){
-    .employees {
-        margin-left: 3px;
-    }
-    .employee {
-        font-size: 7px;
-        padding: 7px 6px;
-        box-sizing: border-box;
-        grid-template-columns: 5% 16% 34% 18% 17% 14%;
-    }
-    .employees img {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin-left: 10px
-    }
-    .employee-body {
-        border-radius: 5px;
-        margin-bottom: 4px;
-    }
-    .employee-header {
-        border-radius: 5px;
-        margin-bottom: 4px;
-        text-align: center;
-        grid-template-columns: 12% 0% 41% 17% 16% 14%;
-    }
-    .employee button {
-        font-size: 7px;
-    }
-    .edit-modal form {
-        width: 250px;
-        padding: 15px;
-        border-radius: 3px;
-    }
-    .edit-modal form label {
-        margin-bottom: 10px;
-    }
-    .edit-modal form label input[type= text] {
-        height: 20px;
-    }
-    .edit-modal form label select {
-        height: 20px;
-    }
-    .edit-modal button {
-        font-size: 0.8em;
-        border-radius: 5px;
-        padding: 5px 10px;
-    }
-    .delete-modal {
-        margin: 80px 0;  
-    }
-    .delete-modal h2{
-        font-size: 10px;
-    }
-    .delete-modal h2 span{
-        font-size: 12px;
-    }
-    .delete-modal section {
-        padding: 10px;
-    }
-    .delete-modal section .btn button {
-        font-size: 8px;
-        padding: 5px 10px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .employee {
-        font-size: 6px
-    }
-    .employee button {
-        font-size: 6px;
-    }
+@media screen and (max-width: 768px) {
+  .employee {
+    font-size: 6px;
+  }
+  .employee button {
+    font-size: 6px;
+  }
 }
