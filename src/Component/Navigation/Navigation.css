@@ -62,15 +62,13 @@ nav .icons span {
 
 @media screen and (max-width: 768px) {
   .navigation {
-    height: 50px;
+    padding: 0 2%;
   }
   .navigation nav {
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px;
+    height: 2rem;
   }
   nav .nav-brand {
-    font-size: 10px;
+    font-size: 0.8rem;
   }
   nav .brand-name {
     padding-left: 5px;
@@ -83,7 +81,7 @@ nav .icons span {
     border-bottom: 2px solid rgb(69, 172, 69);
   }
   nav .icons span {
-    padding-left: 3px;
+    padding-left: 10px;
     font-size: 7px;
   }
 }

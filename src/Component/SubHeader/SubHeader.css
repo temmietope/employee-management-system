@@ -3,10 +3,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.7rem 0.5rem ;
+  padding: 0.7rem 0.5rem;
   box-sizing: border-box;
   margin-bottom: 1.3rem;
-  /* height: 2rem; */
 }
 .sub-header span {
   font-size: 1rem;
@@ -17,41 +16,28 @@
   border: none;
   background-color: rgba(128, 255, 0, 0.288);
   padding: 0.6rem 1.8rem;
-  /* border: none;
-  height: 40px;
-  background-color: rgb(69, 172, 69);
-  font-family: "Artifika"; */
-  border-radius: 100px 100px; 
-  /* border-top-right-radius: 20px; */
+  border-radius: 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sub-header button span {
   font-size: 0.8rem;
-
-  /* font-size: 15px;
-  padding: 20px;
-  font-weight: bold;
-  color: rgba(250, 235, 215, 0.74); */
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .sub-header {
-    height: 6vh;
-    width: 100%;
-    padding: 10px;
+    padding: 0.3rem 0.2rem;
     box-sizing: border-box;
-    margin-bottom: 5px
+    margin-bottom: 0.5rem;
   }
   .sub-header span {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
   .sub-header button {
-    border: none;
-    height: 3.5vh;
-    border-radius: 1px; 
-    border-top-right-radius: 4px;
+    padding: 0.3rem 1.2rem;
   }
   .sub-header button span {
-    font-size: 8px;
-    padding: 0px;
-  }  
+    font-size: 0.7rem;
+  }
 }

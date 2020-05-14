@@ -40,7 +40,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .app {
-    margin: 0;
+  body {
+    padding: 0.5rem;
   }
 }
