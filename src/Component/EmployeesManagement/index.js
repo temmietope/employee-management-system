@@ -137,11 +137,7 @@ const EmployeesManagement = () => {
         />
 
         {/* edit modal */}
-        <Modal
-          style={customStyles}
-          // className="edit-modal"
-          isOpen={editModalIsOpen}
-        >
+        <Modal style={customStyles} isOpen={editModalIsOpen}>
           <EditEmployee
             employee={employeeToEdit}
             onRequestClose={closeEditModal}
@@ -150,7 +146,7 @@ const EmployeesManagement = () => {
         </Modal>
 
         {/* delete modal */}
-        <Modal className="delete-modal" isOpen={deleteModalIsOpen}>
+        <Modal style={customStyles} isOpen={deleteModalIsOpen}>
           <DeleteEmployee
             employee={employeeToDelete}
             onRequestClose={closeDeleteModal}

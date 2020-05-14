@@ -102,7 +102,7 @@
   justify-content: center;
   align-items: center;
 }
-.edit-modal button {
+.edit-modal button, .delete-modal button {
   font-size: 1em;
   border: none;
   border-radius: 5px;
@@ -120,9 +120,11 @@
 }
 .delete-modal {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  margin: 100px 0;
+  height: 100%;
+  box-sizing: border-box;
 }
 .delete-modal h2 {
   font-weight: inherit;
@@ -132,15 +134,26 @@
   font-weight: bolder;
   font-size: 1.5em;
 }
+.delete-modal .emp_name{
+  text-transform: uppercase;
+}
 .delete-modal section {
-  border-radius: 8px;
-  border: 2px solid rgba(216, 82, 82, 0.226);
-  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 1rem
 }
 .delete-modal section .btn {
   text-align: center;
 }
-.delete-modal section .btn button {
+.delete-modal button.cancel-btn {
+  background-color: rgba(218, 8, 8, 0.801);
+  color: #fff;
+}
+.delete-modal button.delete-btn {
+  background: #3f3e3e;
+  color: #fff;
+}
+/* .delete-modal section .btn button {
   background-color: rgba(216, 82, 82, 0.226);
   font-size: 1em;
   border: none;
@@ -148,7 +161,7 @@
   padding: 10px 20px;
   margin: 10px 20px;
   font-family: "Artifika";
-}
+} */
 
 @media screen and (max-width: 768px) {
   .employees {
