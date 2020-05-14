@@ -47,8 +47,8 @@ nav.main-menu.expanded {
   left: 0;
   width: 5.5%;
   overflow: hidden;
-  -webkit-transition: width 0.05s linear;
-  transition: width 0.05s linear;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
   transform: translateZ(0) scale(1, 1);
   -webkit-transform: translateZ(0) scale(1, 1);
   z-index: 1000;
@@ -149,7 +149,9 @@ nav.main-menu li.active > a,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
 .dashboard-page nav.dashboard-menu ul li.active a {
   color: #fff;
-  background-color: #5fa2db;
+  background-color: #615e5e;
+  -webkit-transition: background 2s linear;
+  transition: background 2s linear;
 }
 .area {
   float: left;
