@@ -52,7 +52,7 @@ nav.main-menu.expanded {
   transition: width 0.2s linear;
   transform: translateZ(0) scale(1, 1);
   -webkit-transform: translateZ(0) scale(1, 1);
-  z-index: 1000;
+  /* z-index: 10; */
   padding-top: 2rem;
   box-sizing: border-box;
   border-radius: 0 0 0 10px;
