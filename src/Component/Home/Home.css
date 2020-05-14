@@ -16,6 +16,7 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 740px;
+  border-radius: 0 0 10px 10px;
 }
 
 .fa-2x {
@@ -54,6 +55,7 @@ nav.main-menu.expanded {
   z-index: 1000;
   padding-top: 2rem;
   box-sizing: border-box;
+  border-radius: 0 0 0 10px;
 }
 
 .main-menu > ul {
@@ -161,6 +163,7 @@ nav.main-menu li.active > a,
   margin-left: 60px;
   padding: 2% 5%;
   box-sizing: border-box;
+  border-radius: 0 0 10px 0;
 }
 @font-face {
   font-family: "Titillium Web";

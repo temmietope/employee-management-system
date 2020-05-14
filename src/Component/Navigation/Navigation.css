@@ -4,6 +4,7 @@
   align-items: center;
   background-color: white;
   padding: 0 4%;
+  border-radius: 10px 10px 0 0;
 }
 .navigation .nav-brand i {
   color: rgba(218, 8, 8, 0.801);

@@ -7,7 +7,6 @@ import SideBar from "../SideBar";
 const Home = () => {
   return (
     <div className="home-wrapper">
-      {/* <div className="overlay" /> */}
       <div className="content">
         <SideBar />
         <div className="area">

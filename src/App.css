@@ -33,6 +33,10 @@ a {
 .app {
   position: relative;
   width: 100%;
+  border-radius: 10px;
+}
+button {
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {
