@@ -81,24 +81,6 @@
 .edit-modal form label {
   font-weight: bold;
 }
-/* .edit-modal form label input[type="text"] {
-  border-radius: 8px;
-  background-color: rgb(233, 223, 223);
-  border: none;
-  padding: 0 1rem;
-  height: 30px;
-  font-family: "Artifika";
-  outline: none;
-}
-.edit-modal form label select {
-  outline: none;
-  border-radius: 8px;
-  border: none;
-  height: 30px;
-  padding: 0 1rem;
-  background-color: rgb(233, 223, 223);
-  font-family: "Artifika";
-} */
 .edit-modal form input[type="text"] {
   border-radius: 8px;
   background-color: rgb(233, 223, 223);
