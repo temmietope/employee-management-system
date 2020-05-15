@@ -86,27 +86,33 @@ nav .icons span {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .navigation {
-    height: 38px;
+    padding: 0 3%;
+  }
+  .navigation nav {
+    height: 1.7rem;
   }
   nav .nav-brand {
-    font-size: 9px;
+    font-size: 0.6rem;
   }
   nav .brand-name {
-    padding-left: 4px;
+    padding-left: 3px;
   }
   nav .nav-links span {
     padding: 10px 4px;
-    font-size: 6px;
+    font-size: 7px;
+  }
+  nav .active-link {
+    border-bottom: 2px solid rgb(69, 172, 69);
   }
   nav .icons span {
-    padding-left: 2px;
-    font-size: 5px;
+    padding-left: 8px;
+    font-size: 7px;
   }
 }
 
-@media screen and (width: 1024px) {
+/* @media screen and (width: 1024px) {
   nav .nav-brand {
     font-size: 20px;
   }
@@ -121,4 +127,4 @@ nav .icons span {
     padding-left: 5px;
     font-size: 12px;
   }
-}
+} */

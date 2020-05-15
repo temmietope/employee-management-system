@@ -243,30 +243,50 @@ nav.main-menu li.active > a,
     margin-left: 35px;
   }
 }
+@media screen and (max-width: 480px) {
+  .home-wrapper {
+    width: 95vw;
+  }
+  .content {
+    min-height: 500px;
+    height: 500px;
+    border-radius: 0 0 5px 5px;
+  }
+  .fa-icon {
+    margin-right: 1rem;
+  }
+
+  .main-menu:hover,
+  nav.main-menu.expanded {
+    width: 150px;
+    overflow: visible;
+  }
+
+  .main-menu {
+    width: 10%;
+  }
+  .area {
+    margin-left: 12px;
+    padding: 2% 5% 2% 8%;
+    width: 96%;
+  }
+}
+
 @media screen and (max-width: 360px) {
-  .overlay {
-    height: 346px;
+  .area {
+    margin-left: 12px;
+    padding: 2% 5% 2% 8%;
+    width: 100%;
   }
-}
-@media screen and (width: 768px) {
-  .overlay {
-    height: 365px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .overlay {
-    height: 340px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .overlay {
-    height: 350px;
+  .main-menu {
+    width: 11%;
   }
 }
 
-@media screen and (width: 1024px) {
-  .overlay {
-    height: 790px;
+@media screen and (max-width: 1026px) {
+  .area {
+    margin-left: 0px;
+    padding: 2% 5% 2% 8%;
+    width: 100%;
   }
 }

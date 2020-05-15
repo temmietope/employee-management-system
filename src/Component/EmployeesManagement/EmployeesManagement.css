@@ -81,13 +81,46 @@
 .edit-modal form label {
   font-weight: bold;
 }
-.edit-modal form label input[type="text"] {
+/* .edit-modal form label input[type="text"] {
   border-radius: 8px;
   background-color: rgb(233, 223, 223);
   border: none;
   padding: 0 1rem;
   height: 30px;
   font-family: "Artifika";
+  outline: none;
+}
+.edit-modal form label select {
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  padding: 0 1rem;
+  background-color: rgb(233, 223, 223);
+  font-family: "Artifika";
+} */
+.edit-modal form input[type="text"] {
+  border-radius: 8px;
+  background-color: rgb(233, 223, 223);
+  border: none;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  height: 30px;
+  font-size: 1.125rem;
+  outline: none;
+  line-height: 1.25rem;
+  letter-spacing: -0.028125rem;
+  font-family: "Artifika";
+  width: 100%;
+}
+.edit-modal form input ::placeholder,
+::-webkit-input-placeholder {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.028125rem;
+  font-family: "Artifika";
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 .edit-modal form label select {
   outline: none;
@@ -155,15 +188,6 @@
   background: #3f3e3e;
   color: #fff;
 }
-/* .delete-modal section .btn button {
-  background-color: rgba(216, 82, 82, 0.226);
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 10px 20px;
-  font-family: "Artifika";
-} */
 
 @media screen and (max-width: 768px) {
   .employees {
@@ -195,18 +219,28 @@
     font-size: 7px;
   }
   .edit-modal form {
-    width: 250px;
-    padding: 15px;
+    width: 500px;
+    padding: 10px;
     border-radius: 3px;
   }
   .edit-modal form label {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
-  .edit-modal form label input[type="text"] {
+  .edit-modal form input[type="text"] {
+    border-radius: 2px;
+    padding: 0 0.5rem;
     height: 20px;
+    font-size: 1rem;
+  }
+  .edit-modal form input ::placeholder,
+  ::-webkit-input-placeholder {
+    font-size: 1rem;
+    line-height: 1rem;
   }
   .edit-modal form label select {
+    border-radius: 1px;
     height: 20px;
+    padding: 0 0.5rem;
   }
   .edit-modal button {
     font-size: 0.8em;
@@ -231,11 +265,83 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .employees {
+    margin-left: 15px;
+  }
   .employee {
-    font-size: 6px;
+    font-size: 7px;
+    padding: 7px 6px;
+    box-sizing: border-box;
+    grid-template-columns: 5% 16% 34% 18% 17% 14%;
+  }
+  .employees img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .employee-body {
+    border-radius: 5px;
+    margin-bottom: 4px;
+  }
+  .employee-header {
+    border-radius: 5px;
+    margin-bottom: 4px;
+    text-align: center;
+    grid-template-columns: 12% 0% 41% 17% 16% 14%;
   }
   .employee button {
-    font-size: 6px;
+    font-size: 7px;
+  }
+  .manage {
+    display: flex;
+    flex-flow: column;
+  }
+  .edit-modal form {
+    width: 300px;
+    padding: 15px;
+    border-radius: 3px;
+  }
+  .edit-modal form label {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 10px;
+  }
+  .edit-modal form input[type="text"] {
+    padding: 0 0.5rem;
+    height: 20px;
+    font-size: 1rem;
+  }
+  .edit-modal form input ::placeholder,
+  ::-webkit-input-placeholder {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .edit-modal form label select {
+    border-radius: 1px;
+    height: 20px;
+    padding: 0 0.5rem;
+  }
+  .edit-modal button {
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .delete-modal {
+    margin: 80px 0;
+  }
+  .delete-modal h2 {
+    font-size: 10px;
+  }
+  .delete-modal h2 span {
+    font-size: 12px;
+  }
+  .delete-modal section {
+    padding: 10px;
+  }
+  .delete-modal section .btn button {
+    font-size: 8px;
+    padding: 5px 10px;
   }
 }
